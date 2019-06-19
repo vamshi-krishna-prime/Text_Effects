@@ -19,8 +19,12 @@ class text():
         print(string)
 
 
+def print_blink(message, num):
+    fido = text()
+    fido.blink(message, num)
+
+
 if __name__ == '__main__':
     message = input("Enter the text > ")
     num = int(input("No.of times to blink > "))
-    fido = text()
-    fido.blink(message, num)
+    print_blink(message, num)
