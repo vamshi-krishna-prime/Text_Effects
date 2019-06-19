@@ -9,7 +9,8 @@ class text():
         for letter in message:
             self.blank_list.append(" ")
             self.blank_string = "".join(self.blank_list)
-
+            
+#       cycles 'blank text' and 'input text' for effect 
         for _ in range(num):
             self.clear = "\b" * len(string)
             print(string, end='', flush=True)
