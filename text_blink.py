@@ -1,5 +1,6 @@
 import time
 
+#  class to blink the text
 class text():
     def blink(self, string, num):
         self.blank_list = []
