@@ -22,6 +22,7 @@ class text():
         print(string)
 
 
+# calls the text class with 'input text' and 'number of times to blink' as arguments
 def print_blink(message, num):
     fido = text()
     fido.blink(message, num)
