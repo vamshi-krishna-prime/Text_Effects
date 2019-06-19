@@ -5,6 +5,7 @@ class text():
     def blink(self, string, num):
         self.blank_list = []
 
+#         breaks and append the text for effect
         for letter in message:
             self.blank_list.append(" ")
             self.blank_string = "".join(self.blank_list)
