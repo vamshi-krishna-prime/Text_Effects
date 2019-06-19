@@ -1,23 +1,26 @@
 import time
 
 class text():
-    def blink(string1, string2, num):
+    def blink(self, string, num):
+        self.blank_list = []
+
+        for letter in message:
+            self.blank_list.append(" ")
+            self.blank_string = "".join(self.blank_list)
+
         for _ in range(num):
-            print(string1, end='', flush=True)
+            self.clear = "\b" * len(string)
+            print(string, end='', flush=True)
             time.sleep(0.1)
-            print('\b\b\b\b\b\b\b\b\b\b\b\b', end='', flush=True)
-            print(string2, end='', flush=True)
+            print(self.clear, end='', flush=True)
+            print(self.blank_string, end='', flush=True)
             time.sleep(0.1)
-            print('\b\b\b\b\b\b\b\b\b\b\b\b', end='', flush=True)
-        print(string1)
+            print(self.clear, end='', flush=True)
+        print(string)
 
 
 if __name__ == '__main__':
     message = input("Enter the text > ")
-    blank_list = []
-    for letter in message:
-        blank_list.append(" ")
-        blank_string = "".join(blank_list)
-
     num = int(input("No.of times to blink > "))
-    fido = text.blink(message, blank_string, num)
+    fido = text()
+    fido.blink(message, num)
