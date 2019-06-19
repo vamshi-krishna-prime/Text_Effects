@@ -22,8 +22,9 @@ class text():
 def print_blink(message, num):
     fido = text()
     fido.blink(message, num)
+    
 
-
+# Runs the program only if executed directly
 if __name__ == '__main__':
     message = input("Enter the text > ")
     num = int(input("No.of times to blink > "))
