@@ -11,4 +11,3 @@ def spin(string):
 
 if __name__ == '__main__':
     spin(" Game start ")
-    # print(f"{spin()} Game start {spin()}")
