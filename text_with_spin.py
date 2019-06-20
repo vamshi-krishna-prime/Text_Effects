@@ -1,13 +1,14 @@
 import time
 
-def spin(string1, string2):
+def spin(string):
     for _ in range(10):
-        print(string1, end='', flush=True)
-        time.sleep(0.1)
-        print('\b\b\b\b\b\b\b\b\b\b\b\b', end='', flush=True)
-        print(string2, end='', flush=True)
-        time.sleep(0.1)
-        print('\b\b\b\b\b\b\b\b\b\b\b\b', end='', flush=True)
+        for ch in '-\\|/':
+            print(ch, end='', flush=True)
+            print(string + ch, end='', flush=True)
+            time.sleep(0.1)
+            print('\b\b\b\b\b\b\b\b\b\b\b\b\b\b', end='', flush=True)
+
 
 if __name__ == '__main__':
-    spin(" Game start ", "            ")
+    spin(" Game start ")
+    # print(f"{spin()} Game start {spin()}")
