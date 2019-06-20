@@ -12,10 +12,16 @@ class text():
                 # print('\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b', end='', flush=True)
 
 
+def print_spin(message, num):
+    fido = text()
+    fido.spin(message, num)
+
 if __name__ == '__main__':
     string = input("Enter the text > ")
     num = int(input("No.of times to spin > "))
     # fido = text.spin(string, num) also works
     
-    fido = text()
-    fido.spin(string, num)
+    # /////////////    
+    # fido = text()
+    # fido.spin(string, num) also works
+    print_spin(string, num)
